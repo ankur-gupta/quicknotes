@@ -44,11 +44,13 @@
 
 \begin{document}
 \title{Example document for quicknotes \LaTeX{} class}
-\author{Ankur Gupta\thanks{ankur@perfectlyrandom.org}}
+\author{Author Name\thanks{Some email address}}
 \date{\today}
 \maketitle
 \begin{abstract}
-\lipsum[3]
+This is a short example of how to use the \texttt{quicknotes} class. Please see the PDF for a
+demo of how the final result may look like. This theme is a quick version of the
+\href{https://github.com/ankur-gupta/uwcbethesis}{uwcbethesis} theme.
 \end{abstract}
 
 \section{Section 1}
@@ -57,9 +59,16 @@ The Einstein field equations~\cite{einstein1916foundation} can be displayed nice
 R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8 \pi G}{c^4} T_{\mu\nu}
 \label{eqn:efe}
 \end{equation}
+In comparison, Newton's law of gravitation is written as follows:
+\begin{equation}
+F = -G\frac{m_1 m_2}   {r^2}
+\end{equation}
+in which, $F$ is the attractive force between two point objects that have masses $m_1$ and $m_2$
+and are separated by a scalar distance of $r$.
 
 \subsection{Section 1.1}
-You can refer to Eq~\ref{eqn:efe} easily. Here is the Bernoulli distribution:
+You can refer to Eq~\ref{eqn:efe} easily. A random variable $X\sim \text{Bernoulli}(p)$ is
+Bernoulli distributed when it follows the distribution:
 \begin{align}
 P(X = x) = \begin{cases}
 px + (1-p)(1-x) & x \in \{0, 1\} \\
@@ -91,11 +100,21 @@ Multiplicative form of the Bernoulli distribution is provided in Eq~\ref{eqn:ber
 
 \subsection{Section 2.1}
 You can cite references too like this~\cite{einstein1916foundation}.
-
+A footnote looks like this\footnote{This is a footnote.}.
 Verbatim code can be written like this:
 \begin{code}
 ~/texmf/bibtex/bib/
 \end{code}
+
+\section{Section 2.3}
+Figure~\ref{fig:cat} provides an obligatory cat picture.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{cat.jpg}
+\caption{Curious cat (thanks to Pexels!)}
+\label{fig:cat}
+\end{figure}
 
 \bibliographystyle{acm}
 \bibliography{citations}
