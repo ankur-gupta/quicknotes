@@ -11,8 +11,6 @@
 % \usepackage{footnote} % Provides \footnote
 \usepackage{lipsum}  % Provides \lipsum[n] for filler text
 
-\usepackage[backend=biber, style=alphabetic, citestyle=authoryear]{biblatex}
-
 % hyperref: So I can jump around in the PDF
 \usepackage[pdftex,hyperfootnotes=false,pdfpagelabels]{hyperref}
 \hypersetup{
@@ -54,7 +52,7 @@
 \end{abstract}
 
 \section{Section 1}
-The Einstein field equations\cite{einstein1916foundation} can be displayed nicely as follows.
+The Einstein field equations~\cite{einstein1916foundation} can be displayed nicely as follows.
 \begin{equation}
 R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8 \pi G}{c^4} T_{\mu\nu}
 \label{eqn:efe}
